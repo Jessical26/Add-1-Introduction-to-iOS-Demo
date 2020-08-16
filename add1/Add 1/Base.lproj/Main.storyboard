@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HVD_Comic_Serif_Pro.otf">
+            <string>HVDComicSerifPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="Add_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uTb-Ub-dQg"/>
+                        <viewControllerLayoutGuide type="bottom" id="cd9-6p-6F0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7go-ld-71w">
+                                <rect key="frame" x="-50" y="-50" width="514" height="996"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="krG-0z-Nzb">
+                                <rect key="frame" x="20" y="50" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9I7-d5-4dk"/>
+                                    <constraint firstAttribute="width" constant="120" id="huz-jI-GaF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2h-hr-1ST">
+                                <rect key="frame" x="60.666666666666657" y="61.666666666666664" width="49" height="26.666666666666664"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="JHg-wd-PjW">
+                                <rect key="frame" x="244" y="50" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GD3-69-UMT"/>
+                                    <constraint firstAttribute="width" constant="150" id="IBg-XH-N6m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evY-2k-VaL">
+                                <rect key="frame" x="271.33333333333331" y="61.666666666666664" width="55.333333333333314" height="26.666666666666664"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="eCl-lG-hN5">
+                                <rect key="frame" x="57" y="160" width="300" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="FrA-th-3nw"/>
+                                    <constraint firstAttribute="width" constant="300" id="O5p-FK-64Q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQP-QY-nd6">
+                                <rect key="frame" x="129" y="184.33333333333334" width="156" height="81.666666666666657"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="70"/>
+                                <color key="textColor" red="0.52941176470588236" green="0.30980392156862746" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="tO9-fw-8nF">
+                                <rect key="frame" x="82" y="310" width="250" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="ftg-hW-hQg"/>
+                                    <constraint firstAttribute="height" constant="110" id="wBS-Z0-fwb"/>
+                                </constraints>
+                                <color key="textColor" red="0.41176470588235292" green="0.6588235294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="inputFieldDidChange" destination="BYZ-38-t0r" eventType="editingChanged" id="fix-Qt-VBo"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add 1 to each of the digits. So, 1357 becomes 2468." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY9-3m-PNg">
+                                <rect key="frame" x="19.666666666666657" y="747" width="375" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="kKR-uv-9tU"/>
+                                    <constraint firstAttribute="width" constant="375" id="rMH-PA-rlb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="25"/>
+                                <color key="textColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fQP-QY-nd6" firstAttribute="centerX" secondItem="eCl-lG-hN5" secondAttribute="centerX" id="1Te-lG-W3q"/>
+                            <constraint firstItem="evY-2k-VaL" firstAttribute="centerX" secondItem="JHg-wd-PjW" secondAttribute="centerX" constant="-20" id="1el-W6-l9e"/>
+                            <constraint firstItem="JHg-wd-PjW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="46m-dp-9b8"/>
+                            <constraint firstAttribute="bottom" secondItem="7go-ld-71w" secondAttribute="bottom" id="5Hv-fy-3jV"/>
+                            <constraint firstItem="M2h-hr-1ST" firstAttribute="centerX" secondItem="krG-0z-Nzb" secondAttribute="centerX" constant="5" id="5Wa-sz-aCo"/>
+                            <constraint firstItem="7go-ld-71w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-50" id="5aa-tk-6sJ"/>
+                            <constraint firstItem="fQP-QY-nd6" firstAttribute="centerY" secondItem="eCl-lG-hN5" secondAttribute="centerY" id="8hE-kB-ple"/>
+                            <constraint firstItem="7go-ld-71w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-50" id="9ct-CM-sqY"/>
+                            <constraint firstItem="eCl-lG-hN5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GmO-9V-dP5"/>
+                            <constraint firstItem="tO9-fw-8nF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="It1-a8-1hC"/>
+                            <constraint firstAttribute="bottom" secondItem="7go-ld-71w" secondAttribute="bottom" constant="-50" id="JN6-xj-D79"/>
+                            <constraint firstItem="fQP-QY-nd6" firstAttribute="centerX" secondItem="eCl-lG-hN5" secondAttribute="centerX" id="KhG-La-4yC"/>
+                            <constraint firstAttribute="trailing" secondItem="7go-ld-71w" secondAttribute="trailing" constant="-50" id="UGy-Vx-bLK"/>
+                            <constraint firstItem="krG-0z-Nzb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="V8B-i7-e1U"/>
+                            <constraint firstAttribute="trailing" secondItem="7go-ld-71w" secondAttribute="trailing" constant="-50" id="Y6W-Vl-5Er"/>
+                            <constraint firstItem="M2h-hr-1ST" firstAttribute="centerY" secondItem="krG-0z-Nzb" secondAttribute="centerY" id="Yp8-Gj-Sfv"/>
+                            <constraint firstItem="JHg-wd-PjW" firstAttribute="top" secondItem="uTb-Ub-dQg" secondAttribute="bottom" constant="6" id="ZuV-C8-BNx"/>
+                            <constraint firstItem="7go-ld-71w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zv3-PJ-qPy"/>
+                            <constraint firstItem="7go-ld-71w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bpa-sb-RUN"/>
+                            <constraint firstAttribute="trailing" secondItem="7go-ld-71w" secondAttribute="trailing" id="cYG-X3-W9A"/>
+                            <constraint firstItem="fQP-QY-nd6" firstAttribute="centerY" secondItem="eCl-lG-hN5" secondAttribute="centerY" id="gVR-6j-0GQ"/>
+                            <constraint firstItem="eCl-lG-hN5" firstAttribute="top" secondItem="krG-0z-Nzb" secondAttribute="bottom" constant="60" id="iIZ-Vt-AvA"/>
+                            <constraint firstItem="cd9-6p-6F0" firstAttribute="top" secondItem="kY9-3m-PNg" secondAttribute="bottom" constant="50" id="kpx-pI-WMp"/>
+                            <constraint firstItem="7go-ld-71w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-50" id="pPh-15-A12"/>
+                            <constraint firstItem="7go-ld-71w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-50" id="q4V-CP-gam"/>
+                            <constraint firstItem="kY9-3m-PNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rOE-UI-81q"/>
+                            <constraint firstItem="krG-0z-Nzb" firstAttribute="top" secondItem="uTb-Ub-dQg" secondAttribute="bottom" constant="6" id="sOC-YR-2fQ"/>
+                            <constraint firstItem="evY-2k-VaL" firstAttribute="centerY" secondItem="JHg-wd-PjW" secondAttribute="centerY" id="tHU-5c-kDB"/>
+                            <constraint firstItem="tO9-fw-8nF" firstAttribute="top" secondItem="eCl-lG-hN5" secondAttribute="bottom" constant="20" id="xha-Sn-Gwt"/>
+                            <constraint firstItem="kY9-3m-PNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yfk-Zb-DKx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="tO9-fw-8nF" id="sht-I7-s3L"/>
+                        <outlet property="numberLabel" destination="fQP-QY-nd6" id="fVY-7d-bw6"/>
+                        <outlet property="scoreLabel" destination="M2h-hr-1ST" id="AoS-vE-AcX"/>
+                        <outlet property="timeLabel" destination="evY-2k-VaL" id="nNS-kS-lOd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="input" width="256" height="111"/>
+        <image name="number" width="300" height="122"/>
+        <image name="score" width="119" height="51"/>
+        <image name="time" width="149" height="49"/>
+    </resources>
+</document>
